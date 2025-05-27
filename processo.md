@@ -1,5 +1,7 @@
 # Processo da Equipe - Refatoração do Problema da Mochila
 
+## Alunos: Eduardo Klug, Leonardo Rocha, Mateus de Faria, Mateus Mautone, Renan Iomes.
+
 ## 🧠 Organização da Equipe
 
 A equipe recebeu o código de outra equipe e iniciou a análise funcional e estrutural. Como o tempo era limitado, optamos por realizar a refatoração e testes **localmente**, sem o uso de forks ou branches.
