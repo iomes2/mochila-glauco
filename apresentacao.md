@@ -98,3 +98,38 @@
     * O que ainda poderia ser melhorado (se houver).
 * **Perguntas:**
     * Abrir para perguntas da turma.
+
+1 - Extração de Métodos
+
+Antes, funções longas faziam várias tarefas juntas (ex: avaliação, seleção, mutação e cruzamento misturados).
+
+Agora, cada etapa do algoritmo genético está em um método específico, como initialize_population(), fitness(), selection(), crossover(), mutation(), e elitism(). Isso facilita o entendimento e a manutenção.
+
+2 - Nomeação mais clara
+
+Variáveis como fit, val e wt passaram a ser mais bem documentadas nos retornos e comentários, e métodos têm nomes que descrevem exatamente a função, melhorando a legibilidade.
+
+3 - Redução de Código Duplicado
+
+Antes, cálculos da função fitness poderiam estar repetidos. Agora, o método fitness() centraliza essa lógica, usada por toda a classe.
+
+4- Modularização e Coesão
+
+Cada método tem uma responsabilidade clara, reduzindo acoplamento. Por exemplo, evolve_population() apenas orquestra as operações, sem misturar detalhes internos.
+
+5 - Uso de Bibliotecas Eficientes
+
+O código utiliza numpy para operações vetoriais, aumentando a eficiência no cálculo dos pesos e valores da população.
+
+6 - Testabilidade Melhorada
+
+Com métodos pequenos e claros, fica mais fácil escrever testes unitários para cada parte, garantindo que alterações futuras não quebrem o código.
+
+7 - Documentação e Comentários
+
+A classe tem docstrings explicativas, ajudando qualquer desenvolvedor a entender o propósito das funções.
+
+8 - Controle da População com Elitismo
+
+O método elitism() garante que os melhores indivíduos sejam preservados entre gerações, melhorando a performance do algoritmo.
+
